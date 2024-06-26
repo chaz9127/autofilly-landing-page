@@ -1,42 +1,35 @@
-// .feedback-container {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     height: 100vh;
-//     background-color: #f9f9f9;
-//   }
+.feedback-container {
+    display: flex;
+    justify-content: center;
+  }
   
-//   .feedback-form {
-//     display: flex;
-//     flex-direction: column;
-//     width: 300px;
-//     padding: 20px;
-//     background-color: #fff;
-//     border: 1px solid #ccc;
-//     border-radius: 5px;
-//   }
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 5px;
+  }
   
-//   .form-group {
-//     margin-bottom: 15px;
-//   }
+  .form-group {
+    margin-bottom: 15px;
+  }
   
-//   label {
-//     display: block;
-//     margin-bottom: 5px;
-//     font-weight: bold;
-//   }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
   
-//   input,
-//   textarea {
-//     width: 100%;
-//     padding: 8px;
-//     border: 1px solid #ccc;
-//     border-radius: 4px;
-//   }
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+  }
   
-//   textarea {
-//     resize: vertical;
-//   }
+  textarea {
+    resize: vertical;
+  }
   
   .btn-submit {
     padding: 10px;
@@ -48,7 +41,40 @@
     transition: background-color 0.3s;
   }
   
-  .btn-submit:hover {
+  .btn-submit:hover:not([disabled]), .btn-submit:hover:not([disabled="true"]) {
     background-color: #0056b3;
   }
+
+  .btn-submit[disabled], .btn-submit[disabled="true"], .btn-submit[disabled]:hover, .btn-submit[disabled="true"]:hover{
+    background-color: #444444;
+    cursor: progress;
+  }
   
+  .notification-message {
+    border: 2px black solid;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 16px;
+    font-size: 1.5rem;
+    opacity: 0;
+    display: none;
+    transition: opacity ease-in-out 0.3s;
+    i {
+      font-size: 2rem;
+      margin-right: 24px;
+    }
+
+    &.success-message {
+      background-color: rgba(74, 147, 74, 0.7);
+      border-color: rgba(74, 147, 74, 0.7);
+    }
+    &.error-message {
+      background-color: rgba(220, 53, 69, 0.7);
+      border-color: rgba(220, 53, 69, 0.7);
+    }
+    &.display-notification {
+      opacity: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
