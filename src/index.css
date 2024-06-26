@@ -86,9 +86,6 @@ input, select, textarea {
       box-shadow: 0 0 3px 1px rgba(108, 117, 125, 1);
     }
   }
-  button {
-    background-color: #f9f9f9;
-  }
   input,
   select,
   textarea,
