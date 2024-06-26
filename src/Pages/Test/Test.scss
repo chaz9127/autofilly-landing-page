@@ -12,10 +12,21 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   width: 100%;
+
+  a {
+    display: inline-block;
+    height: 1.2rem;
+  }
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 h2 {
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -52,5 +63,10 @@ textarea {
 
 legend {
   font-weight: bold;
+}
+
+.group-container {
+  display: flex;
+  flex-direction: column;
 }
 

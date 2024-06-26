@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
           Autofilly
         </h1>
         <p className="description">
-          Your one-stop solution for automated form filling.
+          Fill forms with data at the click of a button.
         </p>
         <div className="buttons">
           <a
@@ -24,7 +24,7 @@ const LandingPage: React.FC = () => {
             Add to Chrome
           </a>
           <a
-            href="/test"
+            href="https://github.com/chaz9127/autofilly"
             className="btn btn-secondary"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const LandingPage: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Test
+            Test Form
           </a>
         </div>
       </div>

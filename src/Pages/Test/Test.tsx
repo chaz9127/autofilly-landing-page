@@ -5,7 +5,18 @@ const Test: React.FC = () => {
   return (
     <div className="form-container">
     <form id="complete-form">
-      <h2>Complete Form with All Input Types</h2>
+      <div className="form-header">
+        <h2>Complete Form with All Input Types</h2>
+        
+        <a
+            href="https://chromewebstore.google.com/detail/autofilly/kipeljdmmfapdfmklhibgedbgppgaeom"
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Add to Chrome
+          </a>
+      </div>
       <div className="form-row">
         <div className="form-column">
           <label htmlFor="text-input">Text Input</label>
@@ -31,6 +42,9 @@ const Test: React.FC = () => {
 
           <label htmlFor="time-input">Time Input</label>
           <input type="time" id="time-input" name="time-input" />
+
+          <label htmlFor="textarea-input">Textarea</label>
+          <textarea id="textarea-input" name="textarea-input" rows={4} placeholder="Textarea input"></textarea>
         </div>
 
         <div className="form-column">
@@ -48,28 +62,32 @@ const Test: React.FC = () => {
 
           <fieldset>
             <legend>Radio Inputs</legend>
-            <label>
-              <input type="radio" name="radio-group" value="option1" /> Option 1
-            </label>
-            <label>
-              <input type="radio" name="radio-group" value="option2" /> Option 2
-            </label>
-            <label>
-              <input type="radio" name="radio-group" value="option3" /> Option 3
-            </label>
+            <div className="group-container">
+              <label>
+                <input type="radio" name="radio-group" value="option1" /> Option 1
+              </label>
+              <label>
+                <input type="radio" name="radio-group" value="option2" /> Option 2
+              </label>
+              <label>
+                <input type="radio" name="radio-group" value="option3" /> Option 3
+              </label>
+            </div>
           </fieldset>
 
           <fieldset>
             <legend>Checkbox Inputs</legend>
-            <label>
-              <input type="checkbox" name="checkbox-group" value="checkbox1" /> Checkbox 1
-            </label>
-            <label>
-              <input type="checkbox" name="checkbox-group" value="checkbox2" /> Checkbox 2
-            </label>
-            <label>
-              <input type="checkbox" name="checkbox-group" value="checkbox3" /> Checkbox 3
-            </label>
+            <div className="group-container">
+              <label>
+                <input type="checkbox" name="checkbox-group" value="checkbox1" /> Checkbox 1
+              </label>
+              <label>
+                <input type="checkbox" name="checkbox-group" value="checkbox2" /> Checkbox 2
+              </label>
+              <label>
+                <input type="checkbox" name="checkbox-group" value="checkbox3" /> Checkbox 3
+              </label>
+            </div>
           </fieldset>
 
           <label htmlFor="select-input">Select Input</label>
@@ -78,9 +96,6 @@ const Test: React.FC = () => {
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
           </select>
-
-          <label htmlFor="textarea-input">Textarea</label>
-          <textarea id="textarea-input" name="textarea-input" rows={4} placeholder="Textarea input"></textarea>
 
           <label htmlFor="file-input">File Input (Under Development)</label>
           <input type="file" id="file-input" name="file-input" />
