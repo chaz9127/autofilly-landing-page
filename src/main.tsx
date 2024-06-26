@@ -4,6 +4,7 @@ import './index.css';
 import LandingPage from './Pages/LandingPage/LandingPage.tsx';
 import Test from './Pages/Test/Test.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Feedback from './Pages/Feedback/Feedback.tsx';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,11 @@ const router = createBrowserRouter([
   {
     path: "/test",
     element: <Test />,
+    // create error page
+  },
+  {
+    path: "/feedback",
+    element: <Feedback />,
     // create error page
   },
 ])
