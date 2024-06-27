@@ -61,7 +61,7 @@ const Test: React.FC = () => {
             <input type="week" id="week-input" name="week-input" />
 
             <label htmlFor="color-input">Color Input</label>
-            <input type="color" id="color-input" name="color-input" value="#000000" />
+            <input type="color" id="color-input" name="color-input" />
 
             <fieldset>
               <legend>Radio Inputs</legend>
