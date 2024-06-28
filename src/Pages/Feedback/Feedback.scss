@@ -1,12 +1,14 @@
 .feedback-container {
     display: flex;
     justify-content: center;
+    width: 500px;
+    margin: 0 auto;
   
   .feedback-form {
     display: flex;
     flex-direction: column;
-    width: 300px;
     border-radius: 5px;
+    width: 100%;
   }
   
   .form-group {
@@ -24,6 +26,7 @@
     padding: 8px;
     border-radius: 4px;
     width: 100%;
+    box-sizing: border-box;
   }
   
   textarea {
@@ -38,6 +41,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
   }
   
   .btn-submit:hover:not([disabled]), .btn-submit:hover:not([disabled="true"]) {
