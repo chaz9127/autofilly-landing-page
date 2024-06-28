@@ -21,3 +21,14 @@
         }
     }
 }
+
+@media (prefers-color-scheme: light) {
+    .nav-container {
+        .nav-link {
+            color: black;
+            &.active {
+                border-color: black;
+            }
+        }
+    }
+}
