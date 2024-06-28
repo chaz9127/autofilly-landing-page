@@ -1,9 +1,18 @@
-.container {
+.landing-page-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 66px);
+  flex-direction: column;
+  height: calc(100vh - 400px);
   padding: 20px;
+
+  .content-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-width: 640px;
+  }
 }
 
 .logo img {
